@@ -92,7 +92,7 @@ export default function HomePage() {
               neutral: {
                 textColor: appConfig.theme.colors.neutrals[200],
                 mainColor: appConfig.theme.colors.neutrals[900],
-                mainColorHighlight: appConfig.theme.colors.primary[500],
+                mainColorHighlight: '#fff',
                 backgroundColor: appConfig.theme.colors.neutrals[800],
               },
             }}
@@ -103,9 +103,9 @@ export default function HomePage() {
             fullWidth
             buttonColors={{
               contrastColor: appConfig.theme.colors.neutrals["000"],
-              mainColor: appConfig.theme.colors.primary[500],
-              mainColorLight: appConfig.theme.colors.primary[400],
-              mainColorStrong: appConfig.theme.colors.primary[600],
+              mainColor: 'rgba(182, 0, 0, 2);',
+              mainColorLight: 'rgba(230, 0, 0, 2);',
+              mainColorStrong: 'rgba(150, 0, 0, 2);',
             }}
           />
         </Box>
