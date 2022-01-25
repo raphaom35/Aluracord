@@ -87,13 +87,13 @@ export default function HomePage() {
                 //console.log(image);
               }else{
                 setImage(true);
-                fetch(`https://api.github.com/users/${valor}`)
-                .then(response => response.json())
-                .then(
-                  (result) => {
-                    setName(result.name);
-                  }
-                  );
+                // fetch(`https://api.github.com/users/${valor}`)
+                // .then(response => response.json())
+                // .then(
+                //   (result) => {
+                //     setName(result.name);
+                //   }
+                //   );
               }
               
               console.log(valor.length);
@@ -119,19 +119,19 @@ export default function HomePage() {
 
         {/* Photo Area */}
         <Box
-          styleSheet={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            maxWidth: '200px',
-            padding: '16px',
-            backgroundColor: 'rgba(0, 0, 118, 0.75)',
-            border: '1px solid',
-            borderColor: appConfig.theme.colors.neutrals[999],
-            borderRadius: '10px',
-            flex: 1,
-            minHeight: '240px',
-          }}
+                  styleSheet={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    maxWidth: '200px',
+                    padding: '16px',
+                    backgroundColor: appConfig.theme.colors.neutrals[800],
+                    border: '1px solid',
+                    borderColor: appConfig.theme.colors.neutrals[999],
+                    borderRadius: '10px',
+                    flex: 1,
+                    minHeight: '240px',
+                  }}
         >
           {image?
           <Image
@@ -152,7 +152,7 @@ export default function HomePage() {
               borderRadius: '1000px'
             }}
           >
-            {name}
+            {username}
           </Text>
         </Box>
         {/* Photo Area */}
