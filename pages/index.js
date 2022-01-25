@@ -125,7 +125,7 @@ export default function HomePage() {
                     alignItems: 'center',
                     maxWidth: '200px',
                     padding: '16px',
-                    backgroundColor: appConfig.theme.colors.neutrals[800],
+                    backgroundColor: 'rgba(0, 0, 118, 0.75)',
                     border: '1px solid',
                     borderColor: appConfig.theme.colors.neutrals[999],
                     borderRadius: '10px',
@@ -133,7 +133,7 @@ export default function HomePage() {
                     minHeight: '240px',
                   }}
         >
-
+          {image?
           <Image
             styleSheet={{
               borderRadius: '50%',
@@ -142,7 +142,14 @@ export default function HomePage() {
             src={`https://github.com/${username}.png`}
             
           />
-
+        : <Image
+        styleSheet={{
+          borderRadius: '50%',
+          marginBottom: '16px',
+        }}
+        src={`https://i.ibb.co/YRQKr8Q/pngegg.png`}
+        
+      />}
           <Text
             variant="body4"
             styleSheet={{
