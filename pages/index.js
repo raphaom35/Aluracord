@@ -133,7 +133,7 @@ export default function HomePage() {
                     minHeight: '240px',
                   }}
         >
-          {image?
+
           <Image
             styleSheet={{
               borderRadius: '50%',
@@ -142,7 +142,7 @@ export default function HomePage() {
             src={`https://github.com/${username}.png`}
             
           />
-        :''}
+
           <Text
             variant="body4"
             styleSheet={{
