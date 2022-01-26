@@ -56,7 +56,12 @@ export default function HomePage() {
           onSubmit={(e) => {
             e.preventDefault();  
             //console.log(username);
-            roteamento.push('/chat',{username});
+            roteamento.push({ 
+              pathname: '/chat', 
+              query: { ...roteamento.query, username: username } }, 
+              undefined, 
+              {}
+            )
           }}
           styleSheet={{
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
