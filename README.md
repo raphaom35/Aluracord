@@ -13,7 +13,7 @@ Chat
 </p>
 
 <div align="center">
-<img src="/Aluracord.gif" width="300" height=500 />
+<img src="/Aluracord.gif" width="500" height=500 />
 
 </div>
 
