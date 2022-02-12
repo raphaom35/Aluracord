@@ -11,10 +11,15 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@skynexui/components": "^1.23.2",
+    "@supabase/supabase-js": "^1.29.4",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "react-loading-screen": "^0.0.17",
+    "react-native-load-shimmer": "^0.0.4",
+    "react-native-simple-shimmer": "^1.0.2",
+    "react-spinner-component": "^0.2.2",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
